@@ -3,12 +3,12 @@ library(tidyverse)
 library(readstata13)
 library(haven)
 library(dplyr)
-
-install.packages("did")
+#install.packages("did")
 library(did)
 
-grass <- read_dta("D:/Google Drive/My Teaching/Clemson/Independent_Studies/Austin_Sanderson/work_data_nomissing.dta")
-View(grass)
+
+grass <- read_dta("Data/Stata_data/work_data_nomissing.dta")
+View(grass)   
 sum(is.na(grass$jailrate))
 sum(is.na(grass$prepost))
 
